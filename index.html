@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Ghiza - Pure Nutrition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Is se scroll jhatke se nahi, balki smooth tarike se hoga */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AL-GHIZA</div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#reviews">Reviews</a></li> <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="./assects/6.png" alt="Al-Ghiza Logo" class="hero-logo">
+            </div>
+            <h3>SUMMER COLLECTION 2026</h3>
+            <h1>Pure Nutrition for Life</h1>
+            <a href="#shop" class="btn-primary">SHOP NOW</a>
+        </div>
+    </header>
+    <section class="about-us" id="about">
+        <div class="container about-wrapper">
+            <div class="about-image">
+                <img src="./assects/11.png" alt="Natural Dry Fruits and Powders">
+            </div>
+            <div class="about-content">
+                <h4 class="sub-heading">WHO WE ARE</h4>
+                <h2 class="main-heading">Pure Nutrition, 100% Natural</h2>
+                <p>Welcome to <strong>Al-Ghiza</strong>, your trusted source for premium quality nutrition. We are passionate about bringing you the finest selection of nature's best gifts.</p>
+                
+                <p>We specialize in high-quality <strong>Dry Fruits, Organic Powders, and Healthy Superfoods</strong>. Unlike others, we guarantee that everything we sell is free from preservatives and artificial chemicals.</p>
+                
+                <ul class="about-list">
+                    <li><i class="fa-solid fa-check"></i> Premium Quality Dry Fruits</li>
+                    <li><i class="fa-solid fa-check"></i> 100% Natural & Organic Powders</li>
+                    <li><i class="fa-solid fa-check"></i> No Added Preservatives</li>
+                </ul>
+
+                <a href="#" class="btn-primary">Read More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-truck"></i>
+            <span>Free Shipping</span>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-headset"></i>
+            <span>24/7 Support</span>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Money Back Guarantee</span>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-lock"></i>
+            <span>Secure Payment</span>
+        </div>
+    </section>
+
+    <section class="categories container">
+        <div class="category-card">
+            <img src="./assects/1.png" alt="Wheat">
+            <h3>Grains</h3>
+        </div>
+        <div class="category-card">
+            <img src="./assects/2.png" alt="Spices">
+            <h3>Spices</h3>
+        </div>
+        <div class="category-card">
+            <img src="./assects/3.png" alt="Oils">
+            <h3>Dry-Fruites</h3>
+        </div>
+        <div class="category-card">
+            <img src="./assects/4.png" alt="Superfoods">
+            <h3>Energy-Fruites</h3>
+        </div>
+    </section>
+
+    <section class="products container" id="shop">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./assects/10.png" alt="Organic Wheat">
+                <h4>Organic Wheat-Floar</h4>
+                <p class="price">PKR 500</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./assects/7.png" alt="Brown Rice">
+                <h4>Rice-Floar</h4>
+                <p class="price">PKR 350</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./assects/9.png" alt="Turmeric Powder">
+                <h4>Turmeric Powder</h4>
+                <p class="price">PKR 300</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./assects/8.png" alt="Gram Flour">
+                <h4>Dry-Fruites powder</h4>
+                <p class="price">PKR 950</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-section">
+        <h2>DEAL OF THE DAY - FLAT 50% OFF</h2>
+        <div class="timer">
+            <div class="time-box">00</div>
+            <span>:</span>
+            <div class="time-box">12</div>
+            <span>:</span>
+            <div class="time-box">45</div>
+            <span>:</span>
+            <div class="time-box">30</div>
+        </div>
+    </section>
+
+    <section class="testimonials container" id="reviews">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testi-card">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                <h5>Ali Khan</h5>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Best organic wheat I have ever used. Highly recommended!"</p>
+            </div>
+            <div class="testi-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                <h5>Sara Ahmed</h5>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Delivery was very fast and packaging was excellent."</p>
+            </div>
+            <div class="testi-card">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                <h5>Hina Raza</h5>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Pure nutrition indeed. Will buy again for sure."</p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>AL-GHIZA</h3>
+                <p>Pure and organic nutrition for a healthy lifestyle. We provide 100% natural spices, flour, and dry fruits.</p>
+                
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-location-dot"></i> Shop 5, Gulshan Market, Karachi</p>
+                    <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@alghiza.com</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Shop</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Stay Connected</h3>
+                <p>Subscribe for latest updates and offers.</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Email address">
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 AL-GHIZA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
