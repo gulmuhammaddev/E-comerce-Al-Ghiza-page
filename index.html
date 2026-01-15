@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Ghiza - Pure Nutrition</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        /* Is se scroll jhatke se nahi, balki smooth tarike se hoga */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,7 +17,7 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#shop">Shop</a></li>
-            <li><a href="#reviews">Reviews</a></li> <li><a href="#contact">Contact</a></li>
+            <li><a href="#benifit">Benifits</a></li> <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="menu-icon" onclick="toggleMenu()">
@@ -34,79 +27,62 @@
 
     <header class="hero" id="home">
         <video autoplay muted loop id="bg-video">
-            <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            <source src="./video/2.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
 
         <div class="overlay"></div>
 
         <div class="hero-content">
-            <div class="logo-container">
-                <img src="./assects/6.png" alt="Al-Ghiza Logo" class="hero-logo">
-            </div>
             <h3>SUMMER COLLECTION 2026</h3>
             <h1>Pure Nutrition for Life</h1>
             <a href="#shop" class="btn-primary">SHOP NOW</a>
         </div>
     </header>
-    <section class="about-us" id="about">
-        <div class="container about-wrapper">
-            <div class="about-image">
-                <img src="./assects/11.png" alt="Natural Dry Fruits and Powders">
-            </div>
-            <div class="about-content">
-                <h4 class="sub-heading">WHO WE ARE</h4>
-                <h2 class="main-heading">Pure Nutrition, 100% Natural</h2>
-                <p>Welcome to <strong>Al-Ghiza</strong>, your trusted source for premium quality nutrition. We are passionate about bringing you the finest selection of nature's best gifts.</p>
+    <section class="talbina-section " id="about">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="image-column">
+                    <img src="./assects/12.png" alt="Bowl of Talbina with dates and pistachios">
+                    <div class="image-overlay"></div>
+                </div>
                 
-                <p>We specialize in high-quality <strong>Dry Fruits, Organic Powders, and Healthy Superfoods</strong>. Unlike others, we guarantee that everything we sell is free from preservatives and artificial chemicals.</p>
-                
-                <ul class="about-list">
-                    <li><i class="fa-solid fa-check"></i> Premium Quality Dry Fruits</li>
-                    <li><i class="fa-solid fa-check"></i> 100% Natural & Organic Powders</li>
-                    <li><i class="fa-solid fa-check"></i> No Added Preservatives</li>
-                </ul>
+                <div class="text-column">
+                    <span class="pre-title">The Sunnah Superfood</span>
+                    <h2 class="section-title">Authentic <span class="accent-text">Talbina</span> Delight</h2>
+                    <h3 class="sub-heading">Enriched with Dates, Honey & Pistachios</h3>
+                    
+                    <p class="description">
+                        Experience the timeless tradition of health with our wholesome Talbina. 
+                        Slow-cooked to a creamy perfection, this barley porridge is not just a meal; 
+                        it is a remedy for the heart and soul. We blend the finest barley flour with 
+                        nature's sweeteners—<strong>honey and dates</strong>—and top it with crunchy 
+                        <strong>pistachios</strong> to give you a nutritious boost that keeps you energetic all day.
+                    </p>
 
-                <a href="#" class="btn-primary">Read More About Us</a>
+                    <a href="#" class="btn-primary">View Our Products</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="features" id="features">
-        <div class="feature-item">
-            <i class="fa-solid fa-truck"></i>
-            <span>Free Shipping</span>
-        </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-headset"></i>
-            <span>24/7 Support</span>
-        </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-wallet"></i>
-            <span>Money Back Guarantee</span>
-        </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-lock"></i>
-            <span>Secure Payment</span>
-        </div>
-    </section>
 
-    <section class="categories container">
+    <section class="categories container" id="features">
         <div class="category-card">
-            <img src="./assects/1.png" alt="Wheat">
-            <h3>Grains</h3>
+            <img src="./assects/14.png" alt="Wheat">
+            <h3>TALBINA</h3>
         </div>
         <div class="category-card">
-            <img src="./assects/2.png" alt="Spices">
-            <h3>Spices</h3>
+            <img src="./assects/15.png" alt="Spices">
+            <h3>TALBINA</h3>
         </div>
         <div class="category-card">
-            <img src="./assects/3.png" alt="Oils">
-            <h3>Dry-Fruites</h3>
+            <img src="./assects/16.png" alt="Oils">
+            <h3>TALBINA</h3>
         </div>
         <div class="category-card">
-            <img src="./assects/4.png" alt="Superfoods">
-            <h3>Energy-Fruites</h3>
+            <img src="./assects/17.png" alt="Superfoods">
+            <h3>TALBINA</h3>
         </div>
     </section>
 
@@ -114,94 +90,124 @@
         <h2 class="section-title">Featured Products</h2>
         <div class="product-grid">
             <div class="product-card">
-                <img src="./assects/10.png" alt="Organic Wheat">
-                <h4>Organic Wheat-Floar</h4>
+                <img src="./assects/13.png" alt="Organic Wheat">
+                <h4>Talbina-cashew &  cardmom</h4>
                 <p class="price">PKR 500</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
                 <button class="btn-cart">Add to Cart</button>
             </div>
+
             <div class="product-card">
-                <img src="./assects/7.png" alt="Brown Rice">
-                <h4>Rice-Floar</h4>
+                <img src="./assects/18.png" alt="Brown Rice">
+                <h4>Talbina Almond Flavor</h4>
                 <p class="price">PKR 350</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
                 <button class="btn-cart">Add to Cart</button>
             </div>
+
             <div class="product-card">
-                <img src="./assects/9.png" alt="Turmeric Powder">
-                <h4>Turmeric Powder</h4>
+                <img src="./assects/19.png" alt="Turmeric Powder">
+                <h4>Talbina Nuts-flavour</h4>
                 <p class="price">PKR 300</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
                 <button class="btn-cart">Add to Cart</button>
             </div>
+
             <div class="product-card">
-                <img src="./assects/8.png" alt="Gram Flour">
-                <h4>Dry-Fruites powder</h4>
+                <img src="./assects/20.png" alt="Gram Flour">
+                <h4> Talbina Dry-Fruites flavour </h4>
                 <p class="price">PKR 950</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <div class="product-grid">
+            <div class="product-card">
+                <img src="./assects/13.png" alt="Organic Wheat">
+                <h4>Talbina-cashew &  cardmom</h4>
+                <p class="price">PKR 500</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/18.png" alt="Brown Rice">
+                <h4>Talbina Almond Flavor</h4>
+                <p class="price">PKR 350</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/19.png" alt="Turmeric Powder">
+                <h4>Talbina Nuts-flavour</h4>
+                <p class="price">PKR 300</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/20.png" alt="Gram Flour">
+                <h4> Talbina Dry-Fruites flavour </h4>
+                <p class="price">PKR 950</p>
                 <button class="btn-cart">Add to Cart</button>
             </div>
         </div>
     </section>
 
-    <section class="deal-section">
-        <h2>DEAL OF THE DAY - FLAT 50% OFF</h2>
-        <div class="timer">
-            <div class="time-box">00</div>
-            <span>:</span>
-            <div class="time-box">12</div>
-            <span>:</span>
-            <div class="time-box">45</div>
-            <span>:</span>
-            <div class="time-box">30</div>
+   <section class="benefits-section" id="benifit">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Why Choose Super Talbina?</span>
+                <h2>Health Benefits of <span class="highlight">Talbina</span></h2>
+                <p>A Prophetic medicine that heals the body and soothes the heart.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-box">❤️</div>
+                    <h3>Soothes the Heart</h3>
+                    <p>Talbina is known to reduce stress, anxiety, and sadness. It provides relief to the heart and helps in mental relaxation.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon-box">⚡</div>
+                    <h3>Boosts Energy</h3>
+                    <p>Rich in carbohydrates and essential nutrients, it provides sustained energy throughout the day, removing weakness.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon-box">🌿</div>
+                    <h3>Improves Digestion</h3>
+                    <p>High in dietary fiber, barley helps in curing constipation, bloating, and other stomach-related issues effectively.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Strong Immunity</h3>
+                    <p>Packed with Zinc, Iron, and Vitamins that strengthen your immune system and protect against seasonal illnesses.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="testimonials container" id="reviews">
-        <h2 class="section-title">Testimonials</h2>
-        <div class="testimonial-grid">
-            <div class="testi-card">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
-                <h5>Ali Khan</h5>
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>"Best organic wheat I have ever used. Highly recommended!"</p>
-            </div>
-            <div class="testi-card">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
-                <h5>Sara Ahmed</h5>
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>"Delivery was very fast and packaging was excellent."</p>
-            </div>
-            <div class="testi-card">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
-                <h5>Hina Raza</h5>
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>"Pure nutrition indeed. Will buy again for sure."</p>
-            </div>
+    <section class="contact-us" id="contact">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>Fill out the form below to get in touch with us.</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 
@@ -250,6 +256,7 @@
         </div>
     </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
